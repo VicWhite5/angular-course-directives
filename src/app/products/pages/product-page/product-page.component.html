@@ -17,13 +17,17 @@
     </div>
 
     <div class="col-auto">
-      <span customLabel>Algo de información</span>
+      <span customLabel [color]="color" [errors]="myForm.get('name')?.errors"
+        >Algo de información</span
+      >
     </div>
   </div>
 
   <div class="row">
     <div class="col">
-      <button class="btn btn-primary" (click)="changeColor()">Cambiar Color</button>
+      <button class="btn btn-primary" (click)="changeColor()">
+        Cambiar Color
+      </button>
     </div>
   </div>
 </form>
